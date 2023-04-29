@@ -1,0 +1,15 @@
+{
+  "Logging": {
+    "LogLevel": {
+      "Default": "Information",
+      "Microsoft.AspNetCore": "Warning"
+    }
+  },
+  "AllowedHosts": "*",
+  "MyKey": "MyKeyValue",
+  "RoundTheCodeSync": {
+    "Title": "Our Sync Tool",
+    "Interval": "0:30:00",
+    "ConcurrentThreads": 10
+  }
+}
