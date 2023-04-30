@@ -22,8 +22,6 @@ namespace Lesson004_Configuration.Controllers
             ViewBag.MyKey3 = _configuration.GetValue<string>("SecretKey") ?? "";
             ViewBag.MyKey4 = _configuration.GetValue("SecretKey", "");
 
-            string test = _configuration.GetValue("Test_ClientID", "");
-
             return View();
         }
     }

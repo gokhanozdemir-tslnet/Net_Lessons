@@ -1,0 +1,21 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+<div>Partial</div><hr />
+<div>
+    <span>with tag</span>
+    <partial name="_ListPartialView" />
+    <br />
+    <span>Method</span>
+    @Html.Partial("_ListPartialView")
+    <br/>
+    <span>asyn Method</span>
+    @await Html.PartialAsync("_ListPartialView")
+</div>
+<div>Partial with viewBag</div>
+<hr />
