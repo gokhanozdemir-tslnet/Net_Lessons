@@ -1,7 +1,6 @@
 ﻿using Lesson005_PartialView.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
-using System.Security.Cryptography.X509Certificates;
 
 namespace Lesson005_PartialView.Controllers
 {
@@ -24,12 +23,6 @@ namespace Lesson005_PartialView.Controllers
             };
             ViewBag.Cities = cities;
             return View(cities);
-        }
-
-        [Route("cities")]
-        public IActionResult GetList()
-        {
-            return PartialView("_ListPartialView");
         }
 
         public IActionResult Privacy()

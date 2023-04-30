@@ -26,7 +26,7 @@ namespace Lesson005_PartialView.Controllers
             return View(cities);
         }
 
-        [Route("cities")]
+
         public IActionResult GetList()
         {
             return PartialView("_ListPartialView");

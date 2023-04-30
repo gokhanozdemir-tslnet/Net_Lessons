@@ -1,0 +1,17 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+
+<hr/>
+<div><h3>Basic ViewComponent</h3></div>
+<div>
+    <span>async call</span>
+    @await Component.InvokeAsync("Menu")
+    <span>tag call</span>
+    <vc:menu></vc:menu>
+</div>

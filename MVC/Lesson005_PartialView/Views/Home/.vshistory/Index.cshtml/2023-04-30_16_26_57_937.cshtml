@@ -36,13 +36,12 @@
 <hr/>
 <div>Ajax PartialView</div>
 <div>
-    <div class="cities-content"></div>
-    <button type="button" id="button-load">Get Cities</button>
+
 </div>
 <script>
     document.querySelector("#button-load").addEventListener("click", async function(){
         var response = await fetch("cities");
         var cities = await response.text();
-        document.querySelector(".cities-content").innerHTML=cities;
+        document.querySelector(".cities-content")
     })
 </script>

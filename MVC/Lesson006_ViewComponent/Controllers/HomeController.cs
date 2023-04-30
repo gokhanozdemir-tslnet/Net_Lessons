@@ -1,9 +1,8 @@
-﻿using Lesson005_PartialView.Models;
+﻿using Lesson006_ViewComponent.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
-using System.Security.Cryptography.X509Certificates;
 
-namespace Lesson005_PartialView.Controllers
+namespace Lesson006_ViewComponent.Controllers
 {
     public class HomeController : Controller
     {
@@ -16,20 +15,7 @@ namespace Lesson005_PartialView.Controllers
 
         public IActionResult Index()
         {
-            List<string> cities = new List<string> {
-                "İstanbul",
-                "London",
-                "New York",
-                "Tokyo"
-            };
-            ViewBag.Cities = cities;
-            return View(cities);
-        }
-
-        [Route("cities")]
-        public IActionResult GetList()
-        {
-            return PartialView("_ListPartialView");
+            return View();
         }
 
         public IActionResult Privacy()

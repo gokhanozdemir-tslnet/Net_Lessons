@@ -35,8 +35,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson004_Configuration_Cus
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson005_PartialView", "MVC\Lesson005_PartialView\Lesson005_PartialView.csproj", "{D9C1E7E4-C216-4DD8-8B38-BB8A361686A4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson006_ViewComponent", "MVC\Lesson006_ViewComponent\Lesson006_ViewComponent.csproj", "{8468ABE0-B9D8-47E4-8571-6261504A6469}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -91,10 +89,6 @@ Global
 		{D9C1E7E4-C216-4DD8-8B38-BB8A361686A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D9C1E7E4-C216-4DD8-8B38-BB8A361686A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D9C1E7E4-C216-4DD8-8B38-BB8A361686A4}.Release|Any CPU.Build.0 = Release|Any CPU
-		{8468ABE0-B9D8-47E4-8571-6261504A6469}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8468ABE0-B9D8-47E4-8571-6261504A6469}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8468ABE0-B9D8-47E4-8571-6261504A6469}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8468ABE0-B9D8-47E4-8571-6261504A6469}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -112,7 +106,6 @@ Global
 		{7656A9DE-0F5B-4648-8DBE-63B90A2C0E27} = {C0A74FF6-1325-4FF2-9A45-589A578CC56E}
 		{373393E2-A373-42A2-9F68-185D43FCE090} = {488115CE-65DA-405A-A365-4F4254166103}
 		{D9C1E7E4-C216-4DD8-8B38-BB8A361686A4} = {488115CE-65DA-405A-A365-4F4254166103}
-		{8468ABE0-B9D8-47E4-8571-6261504A6469} = {488115CE-65DA-405A-A365-4F4254166103}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B208347E-B03D-45A9-8602-E963B8E08F13}
