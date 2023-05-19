@@ -11,31 +11,39 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lesson001_Middleware", "MVC
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lesson003_DependencyInjection", "MVC\Lesson003_DependencyInjection\Lesson003_DependencyInjection.csproj", "{2538C8B9-5386-482E-80B5-104AE77E42E9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson003_Autofac", "MVC\Lesson003_Autofac\Lesson003_Autofac.csproj", "{04DEDFEB-DABE-4701-914A-8582C718BDFD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lesson003_Autofac", "MVC\Lesson003_Autofac\Lesson003_Autofac.csproj", "{04DEDFEB-DABE-4701-914A-8582C718BDFD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson004_Configuration", "MVC\Lesson004_Configuration\Lesson004_Configuration.csproj", "{E0913A76-BF5C-4BB4-AC36-2ADE631D6ACF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lesson004_Configuration", "MVC\Lesson004_Configuration\Lesson004_Configuration.csproj", "{E0913A76-BF5C-4BB4-AC36-2ADE631D6ACF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson004_Configuration_Secret", "MVC\Lesson004_Configuration_Secret\Lesson004_Configuration_Secret.csproj", "{99C7C842-99F2-4D00-8E67-1FB26C211B99}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lesson004_Configuration_Secret", "MVC\Lesson004_Configuration_Secret\Lesson004_Configuration_Secret.csproj", "{99C7C842-99F2-4D00-8E67-1FB26C211B99}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CSharp", "CSharp", "{B15ED4D1-C71B-4216-A981-3861EBD55597}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson001_ExtensionMethods", "CSharp\Lesson001_ExtensionMethods\Lesson001_ExtensionMethods.csproj", "{65C6ACE9-5898-4339-BD62-F9435E467EFF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lesson001_ExtensionMethods", "CSharp\Lesson001_ExtensionMethods\Lesson001_ExtensionMethods.csproj", "{65C6ACE9-5898-4339-BD62-F9435E467EFF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson002_AnonymousType", "CSharp\Lesson002_AnonymousType\Lesson002_AnonymousType.csproj", "{65948AEA-F492-48D5-9980-80FC9CB87D30}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lesson002_AnonymousType", "CSharp\Lesson002_AnonymousType\Lesson002_AnonymousType.csproj", "{65948AEA-F492-48D5-9980-80FC9CB87D30}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson003_RecordType", "CSharp\Lesson003_RecordType\Lesson003_RecordType.csproj", "{EEF678DC-1EFB-40D5-881C-C1A052140E30}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lesson003_RecordType", "CSharp\Lesson003_RecordType\Lesson003_RecordType.csproj", "{EEF678DC-1EFB-40D5-881C-C1A052140E30}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DesingPatterns", "DesingPatterns", "{C0A74FF6-1325-4FF2-9A45-589A578CC56E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DPConsole", "DesingPatterns\DPConsole\DPConsole.csproj", "{7656A9DE-0F5B-4648-8DBE-63B90A2C0E27}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DPConsole", "DesingPatterns\DPConsole\DPConsole.csproj", "{7656A9DE-0F5B-4648-8DBE-63B90A2C0E27}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WebAPI", "WebAPI", "{6E15F60D-F618-439D-AEF5-518D2D2CC47F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson004_Configuration_CustomJsonFile", "MVC\Lesson004_Configuration_CustomJsonFile\Lesson004_Configuration_CustomJsonFile.csproj", "{373393E2-A373-42A2-9F68-185D43FCE090}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lesson004_Configuration_CustomJsonFile", "MVC\Lesson004_Configuration_CustomJsonFile\Lesson004_Configuration_CustomJsonFile.csproj", "{373393E2-A373-42A2-9F68-185D43FCE090}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson005_PartialView", "MVC\Lesson005_PartialView\Lesson005_PartialView.csproj", "{D9C1E7E4-C216-4DD8-8B38-BB8A361686A4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lesson005_PartialView", "MVC\Lesson005_PartialView\Lesson005_PartialView.csproj", "{D9C1E7E4-C216-4DD8-8B38-BB8A361686A4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson006_ViewComponent", "MVC\Lesson006_ViewComponent\Lesson006_ViewComponent.csproj", "{8468ABE0-B9D8-47E4-8571-6261504A6469}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lesson006_ViewComponent", "MVC\Lesson006_ViewComponent\Lesson006_ViewComponent.csproj", "{8468ABE0-B9D8-47E4-8571-6261504A6469}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lesson007_UsingTagHelper", "MVC\Lesson007_UsingTagHelper\Lesson007_UsingTagHelper.csproj", "{3DAEEB9F-A4F5-4BF1-9A90-BE2DDA924DDD}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lesson008_LocalFunction", "MVC\Lesson008_LocalFunction\Lesson008_LocalFunction.csproj", "{D95C8A9D-BB8E-426E-A8F9-DEAD24F465CB}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lesson009_ViewSection", "MVC\Lesson009_ViewSection\Lesson009_ViewSection.csproj", "{B1A80CA3-16F3-4C1C-AD11-B9B4953B58A4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson010_HttpClient", "MVC\Lesson010_HttpClient\Lesson010_HttpClient.csproj", "{42F8C9A3-3CD4-4D27-B28B-080D478039C0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -95,6 +103,22 @@ Global
 		{8468ABE0-B9D8-47E4-8571-6261504A6469}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8468ABE0-B9D8-47E4-8571-6261504A6469}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8468ABE0-B9D8-47E4-8571-6261504A6469}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3DAEEB9F-A4F5-4BF1-9A90-BE2DDA924DDD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3DAEEB9F-A4F5-4BF1-9A90-BE2DDA924DDD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3DAEEB9F-A4F5-4BF1-9A90-BE2DDA924DDD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3DAEEB9F-A4F5-4BF1-9A90-BE2DDA924DDD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D95C8A9D-BB8E-426E-A8F9-DEAD24F465CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D95C8A9D-BB8E-426E-A8F9-DEAD24F465CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D95C8A9D-BB8E-426E-A8F9-DEAD24F465CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D95C8A9D-BB8E-426E-A8F9-DEAD24F465CB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B1A80CA3-16F3-4C1C-AD11-B9B4953B58A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B1A80CA3-16F3-4C1C-AD11-B9B4953B58A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B1A80CA3-16F3-4C1C-AD11-B9B4953B58A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B1A80CA3-16F3-4C1C-AD11-B9B4953B58A4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{42F8C9A3-3CD4-4D27-B28B-080D478039C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42F8C9A3-3CD4-4D27-B28B-080D478039C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42F8C9A3-3CD4-4D27-B28B-080D478039C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42F8C9A3-3CD4-4D27-B28B-080D478039C0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -113,6 +137,10 @@ Global
 		{373393E2-A373-42A2-9F68-185D43FCE090} = {488115CE-65DA-405A-A365-4F4254166103}
 		{D9C1E7E4-C216-4DD8-8B38-BB8A361686A4} = {488115CE-65DA-405A-A365-4F4254166103}
 		{8468ABE0-B9D8-47E4-8571-6261504A6469} = {488115CE-65DA-405A-A365-4F4254166103}
+		{3DAEEB9F-A4F5-4BF1-9A90-BE2DDA924DDD} = {488115CE-65DA-405A-A365-4F4254166103}
+		{D95C8A9D-BB8E-426E-A8F9-DEAD24F465CB} = {488115CE-65DA-405A-A365-4F4254166103}
+		{B1A80CA3-16F3-4C1C-AD11-B9B4953B58A4} = {488115CE-65DA-405A-A365-4F4254166103}
+		{42F8C9A3-3CD4-4D27-B28B-080D478039C0} = {488115CE-65DA-405A-A365-4F4254166103}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B208347E-B03D-45A9-8602-E963B8E08F13}

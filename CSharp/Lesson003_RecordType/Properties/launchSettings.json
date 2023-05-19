@@ -1,0 +1,12 @@
+{
+  "profiles": {
+    "Lesson003_RecordType": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "applicationUrl": "https://localhost:19124;http://localhost:19127"
+    }
+  }
+}

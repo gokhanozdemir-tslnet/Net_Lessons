@@ -1,0 +1,21 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+
+@{
+    //Local Function
+    int MyGetValue(string value)
+    {
+        return 2 * Convert.ToInt32(value);
+    }
+}
+@{
+    //Html.Raw
+    string myParagraph = "<p>My Html text Paragraph</p>";
+    ViewData["appTitle"] = "This is Training App";
+}
