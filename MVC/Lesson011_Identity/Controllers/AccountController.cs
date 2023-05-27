@@ -1,4 +1,5 @@
 ﻿using Lesson011_Identity.IdentityEnities;
+using Lesson011_Identity.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 
@@ -8,9 +9,39 @@ namespace Lesson011_Identity.Controllers
     public class AccountController : Controller
     {
         private readonly UserManager<ApplicationUser> _userManager;
-        public AccountController(UserManager<ApplicationUser> userManager)
+        private readonly SignInManager<ApplicationUser> _signInManager;
+        public AccountController(UserManager<ApplicationUser> userManager, 
+            SignInManager<ApplicationUser> signInManager)
         {
             _userManager = userManager;
+            _signInManager = signInManager;
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> Login()
+        {
+            return View(); 
+        }
+        [HttpPost]
+        public async Task<IActionResult> Login(LoginDto loginDto)
+        {
+            if (!ModelState.IsValid)
+            {
+                ViewBag.Errors = ModelState.Values.SelectMany(
+                    temp => temp.Errors).SelectMany(temp => temp.ErrorMessage);
+                  
+                return View(loginDto);
+            }
+            var result = await _signInManager.PasswordSignInAsync(loginDto.Email, loginDto.Password, false,false);
+
+            if (result.Succeeded)
+            {
+                return RedirectToAction("Index", "Home");
+            }
+
+            ModelState.AddModelError("Loging", "Invalid email or password");
+
+            return View(loginDto);
         }
 
         [HttpGet]
@@ -37,8 +68,10 @@ namespace Lesson011_Identity.Controllers
 
             IdentityResult result = await _userManager.CreateAsync(newuser);
 
+
             if (result.Succeeded)
             {
+                await _signInManager.SignInAsync(newuser, isPersistent: true);
                 return RedirectToAction(nameof(HomeController.Index),"Home");
             }
 

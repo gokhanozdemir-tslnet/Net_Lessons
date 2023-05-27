@@ -26,10 +26,14 @@ namespace Lesson011_Identity.IdentityEnities
         [EmailAddress(ErrorMessage = "Email should be in proper email adress format!")]
         public string Email { get; set; }
         [Required(ErrorMessage = "Password cannot be blank!")]
+        [DataType(DataType.Password)]
         public string Password { get; set; }
         [Required(ErrorMessage = "Confirm Password cannot be blank!")]
+        [Compare(nameof(Password),ErrorMessage="Password and confirm password do not matc")]
         public string ConfirmPassword { get; set; }
         [Required(ErrorMessage = "Phone cannot be blank!")]
         public string Phone { get; set; }
     }
+
+    
 }
