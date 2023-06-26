@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Lesson003_UsingSwagger</name>
+    </assembly>
+    <members>
+        <member name="M:Lesson003_UsingSwagger.Controllers.PersonController.Get">
+            <summary>
+            This methods brings api active person list
+            </summary>
+            <returns>
+            Preson List
+            </returns>
+        </member>
+    </members>
+</doc>

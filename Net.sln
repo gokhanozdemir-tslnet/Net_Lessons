@@ -51,6 +51,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lesson001_HelloWorld", "Web
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson002_UsingEFCore", "WebAPI\Lesson002_UsingEFCore\Lesson002_UsingEFCore.csproj", "{D04EC31E-7644-41EA-A654-AB21CB3FA851}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson003_UsingSwagger", "WebAPI\Lesson003_UsingSwagger\Lesson003_UsingSwagger.csproj", "{E4A8435B-2831-4490-9A89-94210314A0D3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -137,6 +139,10 @@ Global
 		{D04EC31E-7644-41EA-A654-AB21CB3FA851}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D04EC31E-7644-41EA-A654-AB21CB3FA851}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D04EC31E-7644-41EA-A654-AB21CB3FA851}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E4A8435B-2831-4490-9A89-94210314A0D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E4A8435B-2831-4490-9A89-94210314A0D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E4A8435B-2831-4490-9A89-94210314A0D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E4A8435B-2831-4490-9A89-94210314A0D3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -162,6 +168,7 @@ Global
 		{5F97E532-72D8-4BF9-92B8-2CC1FB6A2E67} = {488115CE-65DA-405A-A365-4F4254166103}
 		{AC06CB33-D219-4DFE-9F53-98F4D80523C2} = {6E15F60D-F618-439D-AEF5-518D2D2CC47F}
 		{D04EC31E-7644-41EA-A654-AB21CB3FA851} = {6E15F60D-F618-439D-AEF5-518D2D2CC47F}
+		{E4A8435B-2831-4490-9A89-94210314A0D3} = {6E15F60D-F618-439D-AEF5-518D2D2CC47F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B208347E-B03D-45A9-8602-E963B8E08F13}
