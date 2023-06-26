@@ -1,0 +1,21 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+<div>
+    <h2>EnvironmentName</h2>
+    <div>@ViewBag.EnvironmentName</div>
+    <environment include="Development">
+        <p>Development</p>
+    </environment>
+</div>
+<div>
+    <p>Command</p></br>
+    <spam>dotnet run --no-launch-profile</spam></br>
+    <span>$Env:ASPNET_ENVIRONEMT="Staging"</span></br>
+    <span>set ASPNETCORE_ENVIRONEMT="Stagi command pompt"</span>
+</div>

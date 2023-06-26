@@ -9,13 +9,16 @@ namespace Lesson004_Configuration.Controllers
     {
         private readonly IConfiguration _configuration;
         private readonly MasterKey _masterKeysConf;
+        private readonly IOptionsSnapshot<MasterKey> _optionsSnapshot;
 
 
         public HomeController(IConfiguration configuration,
-                              IOptions<MasterKey> masterKeysConf)
+                              IOptions<MasterKey> masterKeysConf,
+                              IOptionsSnapshot<MasterKey> optionsSnapshot)
         {
             _configuration = configuration;
             _masterKeysConf = masterKeysConf.Value;
+            _optionsSnapshot = optionsSnapshot;
         }
 
         public IActionResult Index()
@@ -31,6 +34,8 @@ namespace Lesson004_Configuration.Controllers
             ViewBag.MasterKey3 = _configuration.GetSection("MasterKey")["Key3"] ?? "";
 
             ViewBag.MasterKeyConf = _masterKeysConf;
+
+            ViewBag.SnapConfiguration = _optionsSnapshot;
 
 
             return View();
