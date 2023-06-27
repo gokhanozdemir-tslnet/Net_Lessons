@@ -59,6 +59,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson013_Cookie", "MVC\Les
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson014_Session", "MVC\Lesson014_Session\Lesson014_Session.csproj", "{F5181023-6520-4781-B0CD-4FFB986CEA79}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson015_Caching", "MVC\Lesson015_Caching\Lesson015_Caching.csproj", "{E47125A4-9E2C-4302-B6C8-F0BF1EE4B7EE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -161,6 +163,10 @@ Global
 		{F5181023-6520-4781-B0CD-4FFB986CEA79}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F5181023-6520-4781-B0CD-4FFB986CEA79}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F5181023-6520-4781-B0CD-4FFB986CEA79}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E47125A4-9E2C-4302-B6C8-F0BF1EE4B7EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E47125A4-9E2C-4302-B6C8-F0BF1EE4B7EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E47125A4-9E2C-4302-B6C8-F0BF1EE4B7EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E47125A4-9E2C-4302-B6C8-F0BF1EE4B7EE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -190,6 +196,7 @@ Global
 		{49F3DA0E-8443-4EF2-BEC5-EE850D7AFC69} = {488115CE-65DA-405A-A365-4F4254166103}
 		{645112AA-7885-4871-A583-7C2E827BD695} = {488115CE-65DA-405A-A365-4F4254166103}
 		{F5181023-6520-4781-B0CD-4FFB986CEA79} = {488115CE-65DA-405A-A365-4F4254166103}
+		{E47125A4-9E2C-4302-B6C8-F0BF1EE4B7EE} = {488115CE-65DA-405A-A365-4F4254166103}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B208347E-B03D-45A9-8602-E963B8E08F13}
