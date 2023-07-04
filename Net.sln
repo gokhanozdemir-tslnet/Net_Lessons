@@ -63,6 +63,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lesson015_Caching", "MVC\Le
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson016_Filters", "MVC\Lesson016_Filters\Lesson016_Filters.csproj", "{5295689F-6579-4A44-AE3F-897FA390D912}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson017_ExceptionHandling", "MVC\Lesson017_ExceptionHandling\Lesson017_ExceptionHandling.csproj", "{A925305D-4D53-4600-93E5-054FD70D9442}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -173,6 +175,10 @@ Global
 		{5295689F-6579-4A44-AE3F-897FA390D912}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5295689F-6579-4A44-AE3F-897FA390D912}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5295689F-6579-4A44-AE3F-897FA390D912}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A925305D-4D53-4600-93E5-054FD70D9442}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A925305D-4D53-4600-93E5-054FD70D9442}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A925305D-4D53-4600-93E5-054FD70D9442}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A925305D-4D53-4600-93E5-054FD70D9442}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -204,6 +210,7 @@ Global
 		{F5181023-6520-4781-B0CD-4FFB986CEA79} = {488115CE-65DA-405A-A365-4F4254166103}
 		{E47125A4-9E2C-4302-B6C8-F0BF1EE4B7EE} = {488115CE-65DA-405A-A365-4F4254166103}
 		{5295689F-6579-4A44-AE3F-897FA390D912} = {488115CE-65DA-405A-A365-4F4254166103}
+		{A925305D-4D53-4600-93E5-054FD70D9442} = {488115CE-65DA-405A-A365-4F4254166103}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B208347E-B03D-45A9-8602-E963B8E08F13}
