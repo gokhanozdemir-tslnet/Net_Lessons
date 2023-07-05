@@ -61,9 +61,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lesson014_Session", "MVC\Le
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lesson015_Caching", "MVC\Lesson015_Caching\Lesson015_Caching.csproj", "{E47125A4-9E2C-4302-B6C8-F0BF1EE4B7EE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson016_Filters", "MVC\Lesson016_Filters\Lesson016_Filters.csproj", "{5295689F-6579-4A44-AE3F-897FA390D912}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lesson016_Filters", "MVC\Lesson016_Filters\Lesson016_Filters.csproj", "{5295689F-6579-4A44-AE3F-897FA390D912}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson017_ExceptionHandling", "MVC\Lesson017_ExceptionHandling\Lesson017_ExceptionHandling.csproj", "{A925305D-4D53-4600-93E5-054FD70D9442}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lesson017_ExceptionHandling", "MVC\Lesson017_ExceptionHandling\Lesson017_ExceptionHandling.csproj", "{A925305D-4D53-4600-93E5-054FD70D9442}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson018_AreasAndIdentity", "MVC\Lesson018_AreasAndIdentity\Lesson018_AreasAndIdentity.csproj", "{3F8ABFFF-9A9F-4A76-A75E-D61F2A8BAEC2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -179,6 +181,10 @@ Global
 		{A925305D-4D53-4600-93E5-054FD70D9442}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A925305D-4D53-4600-93E5-054FD70D9442}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A925305D-4D53-4600-93E5-054FD70D9442}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3F8ABFFF-9A9F-4A76-A75E-D61F2A8BAEC2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F8ABFFF-9A9F-4A76-A75E-D61F2A8BAEC2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F8ABFFF-9A9F-4A76-A75E-D61F2A8BAEC2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F8ABFFF-9A9F-4A76-A75E-D61F2A8BAEC2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -211,6 +217,7 @@ Global
 		{E47125A4-9E2C-4302-B6C8-F0BF1EE4B7EE} = {488115CE-65DA-405A-A365-4F4254166103}
 		{5295689F-6579-4A44-AE3F-897FA390D912} = {488115CE-65DA-405A-A365-4F4254166103}
 		{A925305D-4D53-4600-93E5-054FD70D9442} = {488115CE-65DA-405A-A365-4F4254166103}
+		{3F8ABFFF-9A9F-4A76-A75E-D61F2A8BAEC2} = {488115CE-65DA-405A-A365-4F4254166103}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B208347E-B03D-45A9-8602-E963B8E08F13}
