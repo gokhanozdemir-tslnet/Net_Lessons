@@ -65,7 +65,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lesson016_Filters", "MVC\Le
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lesson017_ExceptionHandling", "MVC\Lesson017_ExceptionHandling\Lesson017_ExceptionHandling.csproj", "{A925305D-4D53-4600-93E5-054FD70D9442}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson018_AreasAndIdentity", "MVC\Lesson018_AreasAndIdentity\Lesson018_AreasAndIdentity.csproj", "{3F8ABFFF-9A9F-4A76-A75E-D61F2A8BAEC2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lesson018_AreasAndIdentity", "MVC\Lesson018_AreasAndIdentity\Lesson018_AreasAndIdentity.csproj", "{3F8ABFFF-9A9F-4A76-A75E-D61F2A8BAEC2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UsingFluentValidation", "WebAPI\UsingFluentValidation\UsingFluentValidation.csproj", "{6AC03608-918F-48CD-B353-A33B81C2D244}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson019_FluentValidation", "MVC\Lesson019_FluentValidation\Lesson019_FluentValidation.csproj", "{90EEC4B2-C184-49E7-8406-EB8F2C041983}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -185,6 +189,14 @@ Global
 		{3F8ABFFF-9A9F-4A76-A75E-D61F2A8BAEC2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3F8ABFFF-9A9F-4A76-A75E-D61F2A8BAEC2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3F8ABFFF-9A9F-4A76-A75E-D61F2A8BAEC2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6AC03608-918F-48CD-B353-A33B81C2D244}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6AC03608-918F-48CD-B353-A33B81C2D244}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6AC03608-918F-48CD-B353-A33B81C2D244}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6AC03608-918F-48CD-B353-A33B81C2D244}.Release|Any CPU.Build.0 = Release|Any CPU
+		{90EEC4B2-C184-49E7-8406-EB8F2C041983}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{90EEC4B2-C184-49E7-8406-EB8F2C041983}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{90EEC4B2-C184-49E7-8406-EB8F2C041983}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{90EEC4B2-C184-49E7-8406-EB8F2C041983}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -218,6 +230,8 @@ Global
 		{5295689F-6579-4A44-AE3F-897FA390D912} = {488115CE-65DA-405A-A365-4F4254166103}
 		{A925305D-4D53-4600-93E5-054FD70D9442} = {488115CE-65DA-405A-A365-4F4254166103}
 		{3F8ABFFF-9A9F-4A76-A75E-D61F2A8BAEC2} = {488115CE-65DA-405A-A365-4F4254166103}
+		{6AC03608-918F-48CD-B353-A33B81C2D244} = {6E15F60D-F618-439D-AEF5-518D2D2CC47F}
+		{90EEC4B2-C184-49E7-8406-EB8F2C041983} = {488115CE-65DA-405A-A365-4F4254166103}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B208347E-B03D-45A9-8602-E963B8E08F13}
