@@ -7,7 +7,10 @@ namespace Lesson019_FluentValidation.Validations
     {
         public PersonValidator()
         {
-            RuleFor(x=>x.Name).NotEmpty().WithMessage("xxxName cannot be blank");
+            RuleFor(x=>x.Name)                
+                .NotNull().WithMessage("xxName cannot be blank")
+                .NotEmpty().WithMessage("xxxName cannot be blank")
+                .MinimumLength(8).WithMessage("8 karakterden az olmamaz");
             RuleFor(x => x.Email).NotEmpty().WithMessage("xxEmail cannot  be blank")
                 .EmailAddress().WithMessage("xxEmail should be valid");
         }
