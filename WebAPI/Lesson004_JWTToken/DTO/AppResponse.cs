@@ -1,4 +1,6 @@
-﻿namespace Lesson004_JWTToken.DTO
+﻿using System.Globalization;
+
+namespace Lesson004_JWTToken.DTO
 {
     public class AppResponse
     {
@@ -6,5 +8,7 @@
         public string? Email { get; set; } = string.Empty;
         public string? Token { get; set; } = string.Empty;
         public DateTime? Expiration { get; set; }
+        public string? RefreshToken { get; set; } = string.Empty;
+        public DateTime? RefreshTokenExpirationDateTime { get; set;}
     }
 }

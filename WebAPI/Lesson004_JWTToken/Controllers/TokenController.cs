@@ -1,12 +1,14 @@
 ﻿using Lesson004_JWTToken.DTO;
 using Lesson004_JWTToken.Entities;
 using Lesson004_JWTToken.ServiceContracts;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Lesson004_JWTToken.Controllers
 {
     [Route("api/[controller]")]
+    [AllowAnonymous]
     [ApiController]
     public class TokenController : ControllerBase
     {

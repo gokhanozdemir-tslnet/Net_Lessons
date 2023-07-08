@@ -4,6 +4,7 @@ using Lesson004_JWTToken.ServiceContracts;
 using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
+using System.Security.Cryptography;
 using System.Text;
 
 namespace Lesson004_JWTToken.Services
@@ -51,15 +52,29 @@ namespace Lesson004_JWTToken.Services
 
             JwtSecurityTokenHandler tokenHandler = new JwtSecurityTokenHandler();
             string token = tokenHandler.WriteToken(tokenGenerator);
+            string refreshToken = GenerateRefreshToken();
+            DateTime refreshTokenExpirationDateTime = DateTime.Now.AddMinutes(
+                    Convert.ToInt32(_configuration["RefreshToken:EXPIRATION_MINUTES"])
+                );
 
             return new AppResponse
             {
-                Token=token,
-                Email=user.Email,
-                Expiration=expiration,
-                PersonName=user.PersonName
+                Token = token,
+                Email = user.Email,
+                Expiration = expiration,
+                PersonName = user.PersonName,
+                RefreshToken = refreshToken,
+                RefreshTokenExpirationDateTime = refreshTokenExpirationDateTime
             };
 
+        }
+
+        public string GenerateRefreshToken()
+        {
+            byte[] bytes = new byte[64];
+            var randomNumberGenerator = RandomNumberGenerator.Create();
+            randomNumberGenerator.GetBytes(bytes);
+            return Convert.ToBase64String(bytes);
         }
     }
 }
