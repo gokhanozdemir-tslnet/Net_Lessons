@@ -12,3 +12,7 @@
         }
     }
 }
+
+//IMiddleware need service add
+//builder.Services.AddTransient<MyMiddleware3>();
+
