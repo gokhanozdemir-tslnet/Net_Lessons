@@ -12,6 +12,7 @@ using System.Threading.Tasks;
 using System;
 using FluentAssertions;
 using AutoFixture;
+using Xunit.Abstractions;
 
 namespace Lesson003_UnitTestMocking
 {
@@ -21,8 +22,9 @@ namespace Lesson003_UnitTestMocking
     public class PersonUnitTest
     {
         private readonly IPersonService _personService;
+        private readonly ITestOutputHelper _testOutputHelper;
 
-        public PersonUnitTest()
+        public PersonUnitTest(ITestOutputHelper testOutputHelper)
         {
 
             var personsInitialData = new List<Person> { };
@@ -33,6 +35,8 @@ namespace Lesson003_UnitTestMocking
             dbContextMock.CreateDbSetMock(temp => temp.Persons, personsInitialData);
 
             _personService = new PersonService(dbContext);
+
+            _testOutputHelper = testOutputHelper;
             
             //DbContextMock<AppDbContext>
         }
@@ -45,6 +49,7 @@ namespace Lesson003_UnitTestMocking
             Person pRequest = null;
 
             //Act
+            _testOutputHelper.WriteLine("Example:");
             Func<Task> action = async () => { await _personService.AddPersonAsync(pRequest); };
 
             await action.Should().ThrowAsync<ArgumentNullException>();
@@ -55,12 +60,14 @@ namespace Lesson003_UnitTestMocking
         {
             //Arrange
             var fixture = new Fixture();
+            Person p = null;
             Person pRequest = fixture.Create<Person>();
 
             //Act
             Func<Task> action = async () => { await _personService.AddPersonAsync(pRequest); };
 
-            await action.Should().;
+            _testOutputHelper.WriteLine(action.ToString());
+            
         }
 
 
