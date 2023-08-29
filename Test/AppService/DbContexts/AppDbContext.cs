@@ -12,6 +12,6 @@ namespace AppService.DbContexts
         }
 
 
-        public DbSet<Person> Persons { get; set; }
+        public virtual DbSet<Person> Persons { get; set; }
     }
 }
