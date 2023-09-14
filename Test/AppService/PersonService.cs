@@ -21,6 +21,7 @@ namespace AppService
                 throw new ArgumentNullException(nameof(person));    
             }
             await _db.Persons.AddAsync(person);
+            await _db.SaveChangesAsync();
             return person;
         }
 

@@ -60,13 +60,17 @@ namespace Lesson003_UnitTestMocking
         {
             //Arrange
             var fixture = new Fixture();
-            Person p = null;
-            Person pRequest = fixture.Create<Person>();
+            Person pRequest = fixture.Build<Person>().With(x=>x.Id,0).Create();
+            
 
             //Act
             Func<Task> action = async () => { await _personService.AddPersonAsync(pRequest); };
 
+            var sonuc = await _personService.AddPersonAsync(pRequest);
+
             _testOutputHelper.WriteLine(action.ToString());
+
+            sonuc.Should().NotBe(sonuc.Id == 0);
             
         }
 
