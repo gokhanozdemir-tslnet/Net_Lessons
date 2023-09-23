@@ -33,19 +33,13 @@ namespace Lesson004_UnittestMockRepository
         {
             
             //Arrange
-            Person person_response_expected = _fixture.Build<Person>().Create();            
-            AddPersonRequest person_request = person_response_expected.ToPersonRequest();
+            Person person_response_expected = _fixture.Build<Person>().Create();
+            
+            AddPersonRequest person_request = person.ToPersonRequest();
 
-            _personRepositoryMock.Setup(temp => temp.AddPerson(It.IsAny<Person>()))
-                .ReturnsAsync(person_response_expected);
+            _personRepositoryMock.Setup(temp => temp.AddPerson(It.IsAny<AddPersonRequest>()))
+                .ReturnsAsync();
 
-            //Act
-            var result = await _personservice.AddPerson(person_request.ToPerson());
-
-
-            //Assert
-            //result.Should().NotBe(result.Id==0);
-            result.Id.Should().BeGreaterThan(0);
 
         }
     }

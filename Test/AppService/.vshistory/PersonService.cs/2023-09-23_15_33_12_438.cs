@@ -15,17 +15,17 @@ namespace AppService
             _db = db;
         }
 
-        public async Task<Person> AddPersonAsync(Person person)
+        public async Task<AddPersonResponse> AddPersonAsync(AddPersonRequest personrequest)
         {
-   
+            var person = personrequest.ToPerson();
             if (person==null)
             {
                 throw new ArgumentNullException(nameof(person));    
             }
             //Thread.Sleep(30000);
-            await _db.Persons.AddAsync(person);
+            await _db.Persons.AddAsync(person.ToPerson());
             await _db.SaveChangesAsync();
-            return person;
+            return person.;
         }
 
         public async Task<List<Person>> GetAllPerson()

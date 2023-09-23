@@ -17,8 +17,9 @@ namespace PersonRepository
         }
 
 
-        public async Task<Person> AddPerson(Person person)
-        {          
+        public async Task<Person> AddPerson(AddPersonRequest personrequest)
+        {
+            var person = personrequest.ToPerson();
            await _db.Persons.AddAsync(person);
            await _db.SaveChangesAsync();  
 

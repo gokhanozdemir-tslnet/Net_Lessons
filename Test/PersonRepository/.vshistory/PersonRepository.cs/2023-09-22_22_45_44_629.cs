@@ -1,6 +1,4 @@
-﻿using AppService;
-using AppService.DbContexts;
-using AppService.Dtos;
+﻿using AppService.DbContexts;
 using AppService.Entities;
 using Microsoft.EntityFrameworkCore;
 using RepositoryContracts;
@@ -18,7 +16,7 @@ namespace PersonRepository
 
 
         public async Task<Person> AddPerson(Person person)
-        {          
+        {
            await _db.Persons.AddAsync(person);
            await _db.SaveChangesAsync();  
 

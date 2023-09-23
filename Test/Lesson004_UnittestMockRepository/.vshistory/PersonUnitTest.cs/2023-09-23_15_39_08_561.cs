@@ -43,9 +43,7 @@ namespace Lesson004_UnittestMockRepository
             var result = await _personservice.AddPerson(person_request.ToPerson());
 
 
-            //Assert
-            //result.Should().NotBe(result.Id==0);
-            result.Id.Should().BeGreaterThan(0);
+
 
         }
     }

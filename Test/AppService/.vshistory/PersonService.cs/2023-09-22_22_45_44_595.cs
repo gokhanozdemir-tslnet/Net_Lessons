@@ -1,7 +1,6 @@
 ﻿
 
 using AppService.DbContexts;
-using AppService.Dtos;
 using AppService.Entities;
 using Microsoft.EntityFrameworkCore;
 
@@ -17,7 +16,6 @@ namespace AppService
 
         public async Task<Person> AddPersonAsync(Person person)
         {
-   
             if (person==null)
             {
                 throw new ArgumentNullException(nameof(person));    

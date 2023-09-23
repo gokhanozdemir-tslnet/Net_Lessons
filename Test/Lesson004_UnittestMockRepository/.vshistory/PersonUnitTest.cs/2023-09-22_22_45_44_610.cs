@@ -1,18 +1,14 @@
-
-using AppService;
-using AppService.Dtos;
 using AppService.Entities;
 using AutoFixture;
-
 using FluentAssertions;
 using Moq;
+using PersonService;
 using RepositoryContracts;
 using Xunit;
 
-
 namespace Lesson004_UnittestMockRepository
 {
-    public class PersonUnitTest 
+    public class PersonUnitTest
     {
         private readonly PersonService.PersonService _personservice;
         private readonly IPersonRepository _personRepository;
@@ -31,22 +27,25 @@ namespace Lesson004_UnittestMockRepository
         [Fact]
         public async void AddPerson_ProperPerson_ToBeSucced()
         {
-            
-            //Arrange
-            Person person_response_expected = _fixture.Build<Person>().Create();            
-            AddPersonRequest person_request = person_response_expected.ToPersonRequest();
-
-            _personRepositoryMock.Setup(temp => temp.AddPerson(It.IsAny<Person>()))
-                .ReturnsAsync(person_response_expected);
-
-            //Act
-            var result = await _personservice.AddPerson(person_request.ToPerson());
 
 
-            //Assert
-            //result.Should().NotBe(result.Id==0);
-            result.Id.Should().BeGreaterThan(0);
+            Person personrequest;
 
+            Person personreturn = _fixture.Build<Person>()
+               .Create();
+
+            personrequest = personreturn;
+            personrequest.Id = 0;
+
+
+            _personRepositoryMock.Setup(temp => 
+                temp.AddPerson(It.IsAny<Person>())).ReturnsAsync(
+                personreturn
+                );
+
+           var result =  await _personservice.AddPerson(personrequest);
+
+            result.Should().Be(result.Id > 0);
         }
     }
 }

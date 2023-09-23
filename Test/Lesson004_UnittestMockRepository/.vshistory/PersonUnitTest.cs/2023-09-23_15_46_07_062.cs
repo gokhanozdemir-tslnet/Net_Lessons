@@ -45,7 +45,7 @@ namespace Lesson004_UnittestMockRepository
 
             //Assert
             //result.Should().NotBe(result.Id==0);
-            result.Id.Should().BeGreaterThan(0);
+            result.Should().Be(result.Id != 0);
 
         }
     }
