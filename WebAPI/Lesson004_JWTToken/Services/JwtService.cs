@@ -34,13 +34,8 @@ namespace Lesson004_JWTToken.Services
             };
 
 
-            SymmetricSecurityKey securityKey = new
-                SymmetricSecurityKey(Encoding.UTF8.GetBytes(_configuration["Jwt:Key"]));
-
-            SigningCredentials signingCredentials = new SigningCredentials
-                (securityKey,SecurityAlgorithms.HmacSha256);
-
-
+            SymmetricSecurityKey securityKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_configuration["Jwt:Key"]));
+            SigningCredentials signingCredentials = new SigningCredentials(securityKey,SecurityAlgorithms.HmacSha256);
             JwtSecurityToken tokenGenerator = new JwtSecurityToken(
                 _configuration["Jwt:Issuer"],
                 _configuration["Jwt:Audience"],

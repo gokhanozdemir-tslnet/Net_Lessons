@@ -97,7 +97,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PersonRepository", "Test\Pe
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PersonService", "Test\PersonService\PersonService.csproj", "{38B5AC5A-6E69-4D8F-8DEB-5E3EEEAFE8D3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson020_LoggingSerilog", "MVC\Lesson020_LoggingSerilog\Lesson020_LoggingSerilog.csproj", "{A1F5A827-B8EA-48B3-988A-A990925F0783}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lesson020_LoggingSerilog", "MVC\Lesson020_LoggingSerilog\Lesson020_LoggingSerilog.csproj", "{A1F5A827-B8EA-48B3-988A-A990925F0783}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson021_LocalizationAndResource", "MVC\Lesson021_LocalizationAndResource\Lesson021_LocalizationAndResource.csproj", "{F7AA7874-AF6D-4B0D-BECA-30304D55BCF6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -273,6 +275,10 @@ Global
 		{A1F5A827-B8EA-48B3-988A-A990925F0783}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A1F5A827-B8EA-48B3-988A-A990925F0783}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A1F5A827-B8EA-48B3-988A-A990925F0783}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F7AA7874-AF6D-4B0D-BECA-30304D55BCF6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F7AA7874-AF6D-4B0D-BECA-30304D55BCF6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F7AA7874-AF6D-4B0D-BECA-30304D55BCF6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F7AA7874-AF6D-4B0D-BECA-30304D55BCF6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -321,6 +327,7 @@ Global
 		{AF54F780-CE5E-44A9-BEF4-5CF940C81669} = {2465EEB9-45E8-4963-8541-57D0029C9B24}
 		{38B5AC5A-6E69-4D8F-8DEB-5E3EEEAFE8D3} = {2465EEB9-45E8-4963-8541-57D0029C9B24}
 		{A1F5A827-B8EA-48B3-988A-A990925F0783} = {488115CE-65DA-405A-A365-4F4254166103}
+		{F7AA7874-AF6D-4B0D-BECA-30304D55BCF6} = {488115CE-65DA-405A-A365-4F4254166103}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B208347E-B03D-45A9-8602-E963B8E08F13}

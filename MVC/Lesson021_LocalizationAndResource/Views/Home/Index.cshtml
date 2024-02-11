@@ -1,0 +1,39 @@
+﻿@using Lesson021_LocalizationAndResource.Resources
+@using Microsoft.AspNetCore.Mvc.Localization
+@using Microsoft.Extensions.Localization
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+@inject IStringLocalizer<Lesson021_LocalizationAndResource.Controllers.HomeController> localizer
+@inject IStringLocalizer<SharedResource> sharedLocalizer
+@inject IViewLocalizer viewLocalizer
+@inject GlobalResource globalResource
+
+
+
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+<div>
+    CultureInfo.CurrentCulture :  @System.Globalization.CultureInfo.CurrentCulture
+</div>
+<div>
+    Thread.CurrentThread.CurrentCulture.Name :@Thread.CurrentThread.CurrentCulture.Name
+</div>
+<div>
+    HomeController Resource Hello :@localizer.GetString("Hello").Value or @localizer["Hello"]
+</div>
+<div>
+    Shared Resource Hello :@sharedLocalizer.GetString("Hello").Value
+</div>
+<div>
+    View Resource Hello :@viewLocalizer["Hello"]
+</div>
+<div>
+    GlobalREsource class Resource Hello :@globalResource.Get("Hello")
+</div>
+
+@*     Lesson021_LocalizationAndResource.Resources.Views.Home.Index *@
