@@ -361,3 +361,12 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+/MVC/Lesson021_LocalizationAndResource/.vshistory
+/MVC/Lesson021_LocalizationAndResource/Controllers/.vshistory
+/MVC/Lesson021_LocalizationAndResource/Resources/.vshistory
+/MVC/Lesson021_LocalizationAndResource/Resources/Controllers/.vshistory
+/MVC/Lesson021_LocalizationAndResource/Resources/Views/Home/.vshistory
+/MVC/Lesson021_LocalizationAndResource/Views/Home/.vshistory/Index.cshtml
+/MVC/Lesson021_LocalizationAndResource/Views/Shared/.vshistory
+/WebAPI/Lesson004_JWTToken/Services/.vshistory/JwtService.cs
+/.vshistory/Net.sln
